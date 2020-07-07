@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: Tahoma;
+}
+.container-fluid {
+    padding: 0px 55px;
+}
+
+/*Configuração HEADER Banner*/
+#logotipo {
+    margin-top: 25px;
+    margin-left: -12px;
+}  
+.logo {
+    margin-left: 5px;
+}
+#banner {
+    background-image: linear-gradient(to left, #42e8bb 0%, #02718e 100%);
+    width: 100%;
+    height: 570px;
+    position: relative;
+}
+#banner .h-group h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #cff5ff;
+    margin: 60px 0px 29px;
+    max-width: 624px;
+}
+#banner .h-group h5 {
+    font-size: 20px;
+    color: #ececec;
+    max-width: 600px;
+    line-height: 1.65;
+    margin-bottom: 20px;
+} 
+#banner .parag p i{
+    font-size: 12px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+#banner .parag p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-banner {
+    margin-top: 53px;
+}
+.btn-banner a {
+    font-size: 19px;
+    width: 186px;
+    height: 46px;
+    border-radius: 25px;
+}
+a.btn-verde  {
+    background-color: #0ac970;
+    border: solid 2px transparent;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+    color: #fff;
+}
+a.btn-trans {
+    border: solid 2px #fff;
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 25px;
+    color: #fff;
+}
+#banner .imagens {
+    background-image: url('../assets/bolhas.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 566px;
+    position: absolute;
+    right: -38px;
+    top: -56px;
+}
+#banner #desenho {
+    position: absolute;
+    height: 100%;
+    right: 55px;
+    opacity: .8;
+    z-index: 2;
+    transition: .3s;
+}
+#banner #play {
+    position: absolute;
+    right: 192px;
+    bottom: 124px;
+    cursor: pointer;
+    z-index: 3;
+}
+#play:hover + #desenho {
+   opacity: 1;
+   transition: .3s;
+}
+/*Configuração do HEADER Menu*/
+#menu {
+    width: 100%;
+    background-color: #00526e;
+    position: relative;
+}
+body.menu-fixo #menu {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+body.menu-fixo #menu .row {
+    height: 60px;
+}
+#menu .row {
+    height: 87px;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu .menu-lista li {
+    margin-left: 30px;
+    line-height: 2.2;
+}
+#menu .menu-lista li a {
+    font-size: 18px;
+    color: rgba(236, 236, 236,.7);
+    text-decoration: none;
+}
+#menu .menu-lista li a:hover {
+    color: rgba(236, 236, 236, 1);
+}
+#menu .menu-lista a.btn {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    width: 157px;
+    height: 39.5px;
+    border-radius: 25px;
+}
+/*Configuração SECTION Visão Geral*/
+#visaogeral{
+    margin: 96px 0px;
+}
+body.menu-fixo #visaogeral {
+    padding-top: 96px;
+}
+#visaogeral .row {
+    align-items: center;
+    margin-bottom: 75px;
+}
+.box-text h5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #08a1d2;
+    margin-bottom: 16px;
+}
+.box-text h2 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #00526e;
+    margin-bottom: 35px;
+}
+.box-text p {
+    font-size: 16px;
+    color: #012f3e;
+}
+#visaogeral .box-content {
+    position: relative;
+    text-align: center;
+}
+#visaogeral .box-content #foto {
+    position: absolute;
+    margin-left: -130px;
+    margin-top: 14px;
+}
+#visaogeral .box-content .retangulo {
+    width: 400px;
+    height: 244px;
+    border-radius: 10px;
+    border: solid 5px #00526e;
+    opacity: .8;
+    margin: auto;
+    padding: 22px 96px;
+    text-align: left;
+}
+#visaogeral .box-content .retangulo p {
+    font-size: 16px;
+    color: #00a758;
+}
+/*Configuração SECTION Estrutura*/
+h3.titulo-padrao {
+    text-align: center;
+    font-size: 27px;
+    color: #00526e;
+}
+#estrutura .row {
+    align-items: center;
+    padding: 22px 0;
+}
+#estrutura .box-estrutura {
+    width: 100%;
+    background-color: rgba(234, 238, 239, .5);
+    padding: 55px 0;
+}
+#estrutura .box-estrutura .col-2 {
+    text-align: center;
+}
+.seta-up {
+    width: 0;
+    height: 0;
+    border: 55px solid transparent;
+    border-bottom-color: rgba(234, 238, 239, .5);;
+    margin: -32px auto 0;
+}
+.seta-down {
+    width: 0;
+    height: 0;
+    border: 55px solid transparent;
+    border-top-color: rgba(234, 238, 239, .5);;
+    margin: 0 auto -32px;
+
+}/*Configuração SECTION Testemunhas*/
+#testemunhas .row {
+    margin: 75px 0 115px 0;
+}
+#testemunhas img {
+    margin-bottom: 16px;
+    width: 100%;
+}
+/*Configuração SECTION Mais*/
+#mais .box-mais {
+    position: relative;
+    background-color: rgba(234, 238, 239, .5);
+    width: 100%;
+    height: 633px;
+}
+.box-mais .box-text {
+    margin-top: 170px;
+}
+.box-mais .box-imgs{
+    background-image: url('../assets/notebook.png');
+    background-repeat: no-repeat;
+    background-position-x: 23px;
+    height: 536px;
+    width: 100%;
+    position: relative;
+    right: -55px;
+}
+.box-imgs #celular {
+    position: absolute;
+    top: 185px;
+    left: -73px;
+}
+.box-imgs #lapis-de-cor {
+    position: absolute;
+    top: 325px;
+    left: 138px;
+}
+/*Configuração SECTION Algo-mais*/
+#algo-mais {
+    margin-top: 142px;
+}
+#algo-mais .row {
+    align-items: center;
+    margin-bottom: 72px;
+}
+#algo-mais .box-content {
+    text-align: center;
+}
+.box-content #borracha {
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+/*Configuração do FOOTER azul*/
+#footer-azul {
+    width: 100%;
+    height: 245px;
+    background-color: #00526e;
+}
+.footer-content {
+    margin: auto;
+    text-align: center;
+    color: #f5f5f5;
+}
+.footer-content h3 {
+   font-size: 40px;
+   margin: 26px 0 17px;
+}
+.footer-content h6 {
+   font-size: 16px;
+   margin-bottom: 38px;
+}
+.footer-content a {
+    width: 252px;
+    height: 62px;
+    border-radius: 32px;
+    font-size: 24px;
+    margin-bottom: 35px;
+    line-height: 1.75;
+}
+/*Configuração FOOTER azul-escuro*/
+#footer-azul-escuro {
+    width: 100%;
+    height: 205px;
+    background-color: #002b3a;
+    position: relative;
+}
+.listas {
+    display: inline-flex;
+    margin: 67px 0 54px;
+}
+.lista-menu a {
+    font-size: 14px;
+    color: #ececec;
+    padding-right: 50px;
+}
+.lista-social li {
+    padding-right: 30px;
+}
+.barra {
+    height: 40px;
+    border-left: 1px solid #fff;
+    margin-right: 50px;
+    position: relative;
+    top: -5px;
+}
+p.copyright {
+    font-size: 14px;
+    color: #f5f5f5;
+}
+#btn-top {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 54px;
+    bottom: 17px;
+}
+#btn-top:hover {
+    border: 1px solid #cecece;
+    border-radius: 10px;
+}
+/*RESPONSIVO */
+/* Dispositivos médios (tablets com menos de 992px) */
+@media (max-width: 991.98px) {
+    /*Configuração HEADER Banner*/
+    #banner {
+        height: auto;
+    }
+    .btn-banner {
+        margin-bottom: 20px;
+    }
+    #banner .h-group h1 {
+        font-size: 33px;
+        margin-top: 75px;
+    }
+    #banner .imagens {
+        width: 100%;
+        position: relative;
+        right: 0;
+        top: 0;
+        text-align: left;
+        background-position-x: -95px;
+    }
+    #banner #play {
+        bottom: 127px;
+        left: 104px;
+    }
+    #banner #desenho {
+        height: 100%;
+        right: 0;
+        position: relative;
+    }
+    /*Configuração HEADER Menu*/
+    #menu .menu-lista li {
+        margin-left: 15px;
+    }
+    #menu .menu-lista li a {
+        font-size: 15px;
+    }
+    #menu .menu-lista a.btn {
+        margin-left: 15px;
+    }
+    /*Configuração SECTION Visão Geral*/
+    #visaogeral .box-content #foto  {
+        margin-left: -90px;
+    }
+    #visaogeral .box-content .retangulo {
+        width: 315px;
+        padding: 25px 53px;
+    }
+    #visaogeral .box-content #rascunho2 {
+        width: 360px;
+    }
+    /*Configuração SECTION Mais*/
+    .box-mais .box-imgs {
+        background-position: 0;
+    }
+    .box-imgs #celular {
+        top: 199px;
+        left: -155px;
+    }
+    .box-imgs #lapis-de-cor {
+        left: 7px;
+    }
+    /*Configuração SECTION algo-mais*/
+    .box-content #borracha {
+        position: relative;
+        top: 278px;
+        left: -125px;
+    }
+    /*COnfiguração FOOTER footer-azul-escuro*/
+    .listas {
+        margin: 50px 0 30px;
+    }
+    .lista-menu a {
+        padding-right: 33px;
+    }
+}
+/* Dispositivos small (telefones em modo paisagem, com menos de 768px) */
+@media (max-width: 767.98px) {
+    /*Configuração HEADER Banner*/
+    #banner .imagens {
+        height: 474px;
+        background-position-x: -293px;
+    }
+    #banner #play {
+        width: 85px;
+        bottom: 111px;      
+        left: 94px;
+    }
+    /*Configuração HEADER Menu*/
+    #menu .row {
+        justify-content: center!important;
+    }
+    #menu .menu-lista li {
+        margin-left: 14px;
+        margin-bottom: 10px;
+    }
+    /*Coniguração SECTION visaogeral*/
+    #visaogeral .row:first-child {
+        margin-bottom: 20px;
+    }
+    .row.invert {
+        flex-direction: column-reverse;
+    }
+    /*Configuração SECTION estrutura*/
+    .box-text h5 {
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+    #testemunhas .box-text h5 {
+        margin-top: 0;
+        margin-bottom: 75px;
+    }
+    #testemunhas .row {
+        margin-bottom: 70px;
+    }
+    .box-text h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .box-text p {
+        font-size: 14px;
+    }
+    #testemunhas .box-text p {
+        margin-bottom: 8px;
+    }
+    /*COnfiguração SECTION mais*/
+    .box-mais .box-imgs {
+        right: -47px;
+    }
+    .box-imgs #celular {
+        top: 199px;
+        left: -124px;
+        width: 301px;
+    }
+    .box-imgs #lapis-de-cor {
+        top: 365px;
+        left: 0;
+        width: 248px;
+    }
+    /*Configuração SECTION algo-mais*/
+    .box-content #borracha {
+        top: 108px;
+        left: 30px;
+    }
+    /*Configuração FOOTER footer-azul-escuro*/
+    .listas {
+        margin: 33px 0 10px;
+    }
+    .lista-menu li {
+        margin-bottom: 9px;
+    }
+    #footer-azul-escuro ul {
+        flex-direction: column;
+    }
+    .lista-social li {
+        padding-bottom: 5px;
+    }
+    .barra {
+        height: 125px;
+    }
+    p.copyright {
+        margin-bottom: 0;
+    }
+    #btn-top {
+        bottom: 7px;
+    }
+}
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+    /*Configuração HEADER banner*/
+    .btn-banner {
+        text-align: center;
+    }
+    .btn-banner a {
+        font-size: 23px;
+        width: 210px;
+        height: 55px;
+        margin-bottom: 15px;
+    }
+    #banner .imagens {
+        text-align: center;
+    }
+    a.btn-trans {
+        margin-left: 0;
+    }
+    #banner #desenho {
+        right: 0px;
+    }
+    #banner #play {
+        width: 90px;
+        left: 130px;
+    }
+    /*Configuração HEADER menu*/
+    #menu .menu-lista li {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+    /* #menu .menu-lista li:active {
+        background-color: green;
+    } */
+    /*Configuração SECTION visaogeral*/
+    #visaogeral .box-content .retangulo {
+        width: 245px;
+        padding: 25px 18px;
+    }
+    #visaogeral .box-content #rascunho2 {
+        width: 280px;
+    }
+    /*Configuração SECTION mais*/
+    #mais .box-mais {
+        height: 100%;
+    }
+    .box-mais .box-text {
+        margin-top: 70px;
+    }
+    .box-mais .box-imgs {
+        right: -15px;
+    }
+    .box-imgs #lapis-de-cor {
+        width: 250px;
+        top: 310px;
+    }
+    /*Configuração SECTION algo-mais*/
+    #material {
+        width: 270px;
+    }
+    .box-content #borracha {
+        top: 108px;
+        left: -22px;
+    }
+    /*Configuração FOOTER*/
+    #footer-azul, #footer-azul-escuro {
+        height: 100%;
+    }
+    p.copyright {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    #btn-top {
+        bottom: 92px;
+        right: 17px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}
+
