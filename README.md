@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
 
 # Projeto Landing Page
@@ -21,3 +22,8 @@
 ✔️ Zeplin
 </div>
 
+=======
+# LandingPage
+Landing Page feito em conjunto com um profissional de Ux designer, com intuito de agregar ao portifolio da agencia.
+Projeto feito usando Html5, Css3, Javascript, Jquery, Bootstrap4.
+>>>>>>> 3eecb6b2fa876f0e670418b1a30a17b80f51b882
